@@ -2,7 +2,7 @@
 FROM caddy:builder AS builder
 
 RUN xcaddy build \
-    --with https://github.com/caddy-dns/dnspod
+    --with github.com/caddy-dns/dnspod
 
 FROM caddy:latest
 
