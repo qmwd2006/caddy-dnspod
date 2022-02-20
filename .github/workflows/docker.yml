@@ -40,10 +40,10 @@ jobs:
           # relative path to the place where source code with Dockerfile is located
           context: .
           # Note: tags has to be all lower-case
-          tags: ghcr.io/${{ github.repository }}
+          tags: ghcr.io/colinshen/caddy-dnspod
           # build on feature branches, push only on main branch
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=ghcr.io/${{ github.repository }}
+          cache-from: type=registry,ref=ghcr.io/colinshen/caddy-dnspod
           push: true
 
       - name: Image digest
