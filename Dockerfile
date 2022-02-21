@@ -1,7 +1,5 @@
-From scratch
-RUN echo "---------------------------------------"
-RUN echo "caddy dnspod"
-RUN echo "---------------------------------------"
+FROM alpine
+CMD ["echo", "Hello StackOverflow!"]
 # FROM caddy:builder AS builder
 
 # RUN xcaddy build \
