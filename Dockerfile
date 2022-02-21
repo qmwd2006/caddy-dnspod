@@ -1,9 +1,12 @@
+From scratch
+RUn echo "---------------------------------------"
+RUn echo "caddy dnspod"
+RUn echo "---------------------------------------"
+# FROM caddy:builder AS builder
 
-FROM caddy:builder AS builder
+# RUN xcaddy build \
+#     --with github.com/caddy-dns/dnspod
 
-RUN xcaddy build \
-    --with github.com/caddy-dns/dnspod
+# FROM caddy:latest
 
-FROM caddy:latest
-
-COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+# COPY --from=builder /usr/bin/caddy /usr/bin/caddy
