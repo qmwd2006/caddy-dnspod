@@ -1,7 +1,7 @@
 From scratch
-RUn echo "---------------------------------------"
-RUn echo "caddy dnspod"
-RUn echo "---------------------------------------"
+RUN echo "---------------------------------------"
+RUN echo "caddy dnspod"
+RUN echo "---------------------------------------"
 # FROM caddy:builder AS builder
 
 # RUN xcaddy build \
